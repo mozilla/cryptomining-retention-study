@@ -1,15 +1,15 @@
 {
   "manifest_version": 2,
-  "name": "Fingerprinting and Cryptomining Protections Retention Study",
+  "name": "Cryptomining Protections Retention Study",
   "version": "1.0",
-  "description": "A study that examines the impact of turning on fingerprinting and cryptomining protections.",
+  "description": "A study that examines the impact of turning on cryptomining protections.",
   "hidden": true,
   "background": {
     "scripts": ["background.js"]
   },
   "applications": {
     "gecko": {
-      "id": "fingerprinting-cryptomining-retention-study@shield.mozilla.org",
+      "id": "cryptomining-retention-study@shield.mozilla.org",
       "strict_min_version": "66.0"
     }
   },
