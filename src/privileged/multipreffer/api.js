@@ -79,9 +79,18 @@ this.FirefoxHooks = {
   },
 
   onUninstalling(addon) {
+    this.handleDisableOrUninstall(addon);
+  },
+
+  onDisabled(addon) {
+    this.handleDisableOrUninstall(addon);
+  },
+
+  async handleDisableOrUninstall(addon) {
     if (addon.id !== gExtension.id) {
       return;
     }
+
     this.cleanup();
     AddonManager.removeAddonListener(this);
   },
